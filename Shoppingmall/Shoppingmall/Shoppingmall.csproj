@@ -114,6 +114,12 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="My_Infor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Infor.Designer.cs">
+      <DependentUpon>My_Infor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pay.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Infor.resx">
+      <DependentUpon>My_Infor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pay.resx">
       <DependentUpon>Pay.cs</DependentUpon>

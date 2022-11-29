@@ -46,7 +46,8 @@ namespace Shoppingmall
 
         private void 내정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("내 정보");
+            My_Infor _Form = new My_Infor();
+            _Form.Show();
         }
 
         private void 로그아웃ToolStripMenuItem_Click(object sender, EventArgs e)
