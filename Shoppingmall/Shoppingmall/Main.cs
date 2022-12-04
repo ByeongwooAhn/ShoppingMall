@@ -46,7 +46,7 @@ namespace Shoppingmall
 
         private void 내정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            My_Infor _Form = new My_Infor();
+            My_Infor _Form = new My_Infor(this);
             _Form.Show();
         }
 
