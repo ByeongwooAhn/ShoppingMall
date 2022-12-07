@@ -74,7 +74,15 @@ namespace Shoppingmall
                 }
                 else if (Pay_Cash.Checked == true && Pay_Card.Checked == false)
                 {
+                    Image image;
+                    Product_infor product_Infor = new Product_infor();
+                    My_Infor my_Infor = new My_Infor();
+
+                    image = product_Infor.pictureBox1.Image;
+                    my_Infor.pictureBox1.Image = image;
+
                     MessageBox.Show("결제가 완료되었습니다.\n금일 24시까지 OO은행 998877-00-123456으로 입금해 주세요");
+                    Close();
                 }
             }
         }

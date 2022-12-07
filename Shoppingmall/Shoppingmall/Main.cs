@@ -1,4 +1,5 @@
 ﻿using MySqlX.XDevAPI.Common;
+using Org.BouncyCastle.Asn1.X509;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -46,7 +47,8 @@ namespace Shoppingmall
 
         private void 내정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            My_Infor _Form = new My_Infor(this);
+            My_Infor _Form = new My_Infor();
+            _Form.main = this;
             _Form.Show();
         }
 
@@ -72,7 +74,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label2.Text;
                     _Infor.label7.Text = "65";
                     _Infor.label8.Text = "68";
@@ -82,7 +85,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label2.Text;
                 _Infor.label7.Text = "65";
                 _Infor.label8.Text = "68";
@@ -103,7 +107,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label2.Text;
                     _Infor.label7.Text = "65";
                     _Infor.label8.Text = "68";
@@ -113,7 +118,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label2.Text;
                 _Infor.label7.Text = "65";
                 _Infor.label8.Text = "68";
@@ -134,7 +140,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label3.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "72";
@@ -144,7 +151,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label3.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "72";
@@ -165,7 +173,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label3.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "72";
@@ -175,7 +184,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label3.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "72";
@@ -196,7 +206,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label4.Text;
                     _Infor.label7.Text = "48";
                     _Infor.label8.Text = "70";
@@ -206,7 +217,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label4.Text;
                 _Infor.label7.Text = "48";
                 _Infor.label8.Text = "70";
@@ -227,7 +239,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label4.Text;
                     _Infor.label7.Text = "48";
                     _Infor.label8.Text = "70";
@@ -237,7 +250,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label4.Text;
                 _Infor.label7.Text = "48";
                 _Infor.label8.Text = "70";
@@ -258,7 +272,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label5.Text;
                     _Infor.label6.Text = "M";
                     _Infor.label7.Text = "28";
@@ -269,7 +284,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label5.Text;
                 _Infor.label6.Text = "M";
                 _Infor.label7.Text = "28";
@@ -291,7 +307,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label5.Text;
                     _Infor.label6.Text = "M";
                     _Infor.label7.Text = "28";
@@ -302,7 +319,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label5.Text;
                 _Infor.label6.Text = "M";
                 _Infor.label7.Text = "28";
@@ -324,7 +342,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label6.Text;
                     _Infor.label7.Text = "40";
                     _Infor.label8.Text = "68";
@@ -334,7 +353,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label6.Text;
                 _Infor.label7.Text = "40";
                 _Infor.label8.Text = "68";
@@ -355,7 +375,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label6.Text;
                     _Infor.label7.Text = "40";
                     _Infor.label8.Text = "68";
@@ -365,7 +386,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label6.Text;
                 _Infor.label7.Text = "40";
                 _Infor.label8.Text = "68";
@@ -386,7 +408,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label7.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "74";
@@ -396,7 +419,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label7.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "74";
@@ -417,7 +441,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label7.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "74";
@@ -427,7 +452,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label7.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "74";
@@ -448,7 +474,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label8.Text;
                     _Infor.label6.Text = "S";
                     _Infor.label7.Text = "28";
@@ -459,7 +486,8 @@ namespace Shoppingmall
             }
             else
             {
-                Product_infor _Infor = new Product_infor(this);
+                Product_infor _Infor = new Product_infor();
+                _Infor.main = this;
                 _Infor.label1.Text = label8.Text;
                 _Infor.label6.Text = "S";
                 _Infor.label7.Text = "28";
@@ -481,7 +509,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label8.Text;
                     _Infor.label6.Text = "S";
                     _Infor.label7.Text = "28";
@@ -492,7 +521,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label8.Text;
                     _Infor.label6.Text = "S";
                     _Infor.label7.Text = "28";
@@ -514,7 +544,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
@@ -524,7 +555,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
@@ -545,7 +577,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
@@ -555,7 +588,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
@@ -576,7 +610,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
@@ -586,7 +621,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
@@ -607,7 +643,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
@@ -617,7 +654,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
@@ -638,7 +676,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
@@ -648,7 +687,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
@@ -669,7 +709,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
@@ -679,7 +720,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
@@ -700,7 +742,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
@@ -710,7 +753,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
@@ -731,7 +775,8 @@ namespace Shoppingmall
 
                 if (result == DialogResult.Yes)
                 {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
@@ -741,7 +786,8 @@ namespace Shoppingmall
             }
             else
             {
-                    Product_infor _Infor = new Product_infor(this);
+                    Product_infor _Infor = new Product_infor();
+                    _Infor.main = this;
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";

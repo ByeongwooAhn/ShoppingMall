@@ -12,13 +12,12 @@ namespace Shoppingmall
 {
     public partial class Product_infor : Form
     {
-        Main main;
-
-        public Product_infor(Main M)
+        public Product_infor()
         {
             InitializeComponent();
-            main = M;
         }
+
+        public Main main;
 
         private void button1_Click(object sender, EventArgs e)
         {
