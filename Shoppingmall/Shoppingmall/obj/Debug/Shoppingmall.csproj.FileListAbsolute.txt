@@ -233,3 +233,4 @@ C:\Users\GD-User2\Desktop\실장파일\파일\Git\Study\Shop_Ver2\Shoppingmall\S
 C:\Users\GD-User2\Desktop\실장파일\파일\Git\Study\Shop_Ver2\Shoppingmall\Shoppingmall\obj\Debug\Shoppingmall.csproj.CopyComplete
 C:\Users\GD-User2\Desktop\실장파일\파일\Git\Study\Shop_Ver2\Shoppingmall\Shoppingmall\obj\Debug\Shoppingmall.exe
 C:\Users\GD-User2\Desktop\실장파일\파일\Git\Study\Shop_Ver2\Shoppingmall\Shoppingmall\obj\Debug\Shoppingmall.pdb
+C:\Users\user\Desktop\독수리\대학 과제\윈도우프로그래밍\Shop.ver2\Shoppingmall\Shoppingmall\obj\Debug\Shoppingmall.Not_Member.resources

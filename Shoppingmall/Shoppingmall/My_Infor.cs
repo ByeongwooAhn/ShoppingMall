@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -146,9 +147,9 @@ namespace Shoppingmall
         }
 
 
-        public void Order()
+        public void Order1()
         {
-            string sql = "select 상품_사진, 가격, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List1.Text + "'";
+            string sql = "select 가격, 결제방식, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List1.Text + "'";
             using (MySqlConnection conn = new MySqlConnection(connstr))
             {
                 try
@@ -159,12 +160,20 @@ namespace Shoppingmall
 
                     MySqlDataReader reader = cmd.ExecuteReader();
                     reader.Read();
-                    //pictureBox4.Image = reader["아이디"].Bitmap();
+
                     label5.Text = reader["가격"].ToString();
+                    label15.Text = reader["결제방식"].ToString();
                     label7.Text = reader["은행"].ToString();
-                    label8.Text = (reader["카드번호1"].ToString() + reader["카드번호2"].ToString() + reader["카드번호3"].ToString() + reader["카드번호4"].ToString());
+                    label8.Text = (reader["카드번호1"].ToString() + " - " + reader["카드번호2"].ToString() + " - " + reader["카드번호3"].ToString() + " - " + reader["카드번호4"].ToString());
                     label10.Text = reader["받는_사람"].ToString();
                     label12.Text = reader["주소"].ToString();
+
+                    if (label15.Text == "무통장 입금")
+                    {
+                        label6.Text = "입금 계좌";
+                        label7.Text = "OO은행";
+                        label8.Text = "998877-00-123456";
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -172,6 +181,182 @@ namespace Shoppingmall
                 }
             }
         }
+
+        public void Order2()
+        {
+            string sql = "select 가격, 결제방식, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List2.Text + "'";
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+
+                    label5.Text = reader["가격"].ToString();
+                    label15.Text = reader["결제방식"].ToString();
+                    label7.Text = reader["은행"].ToString();
+                    label8.Text = (reader["카드번호1"].ToString() + " - " + reader["카드번호2"].ToString() + " - " + reader["카드번호3"].ToString() + " - " + reader["카드번호4"].ToString());
+                    label10.Text = reader["받는_사람"].ToString();
+                    label12.Text = reader["주소"].ToString();
+
+                    if (label15.Text == "무통장 입금")
+                    {
+                        label6.Text = "입금 계좌";
+                        label7.Text = "OO은행";
+                        label8.Text = "998877-00-123456";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public void Order3()
+        {
+            string sql = "select 가격, 결제방식, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List3.Text + "'";
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+
+                    label5.Text = reader["가격"].ToString();
+                    label15.Text = reader["결제방식"].ToString();
+                    label7.Text = reader["은행"].ToString();
+                    label8.Text = (reader["카드번호1"].ToString() + " - " + reader["카드번호2"].ToString() + " - " + reader["카드번호3"].ToString() + " - " + reader["카드번호4"].ToString());
+                    label10.Text = reader["받는_사람"].ToString();
+                    label12.Text = reader["주소"].ToString();
+
+                    if (label15.Text == "무통장 입금")
+                    {
+                        label6.Text = "입금 계좌";
+                        label7.Text = "OO은행";
+                        label8.Text = "998877-00-123456";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public void Order4()
+        {
+            string sql = "select 가격, 결제방식, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List4.Text + "'";
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+
+                    label5.Text = reader["가격"].ToString();
+                    label15.Text = reader["결제방식"].ToString();
+                    label7.Text = reader["은행"].ToString();
+                    label8.Text = (reader["카드번호1"].ToString() + " - " + reader["카드번호2"].ToString() + " - " + reader["카드번호3"].ToString() + " - " + reader["카드번호4"].ToString());
+                    label10.Text = reader["받는_사람"].ToString();
+                    label12.Text = reader["주소"].ToString();
+
+                    if (label15.Text == "무통장 입금")
+                    {
+                        label6.Text = "입금 계좌";
+                        label7.Text = "OO은행";
+                        label8.Text = "998877-00-123456";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public void Order5()
+        {
+            string sql = "select 가격, 결제방식, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List5.Text + "'";
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+
+                    label5.Text = reader["가격"].ToString();
+                    label15.Text = reader["결제방식"].ToString();
+                    label7.Text = reader["은행"].ToString();
+                    label8.Text = (reader["카드번호1"].ToString() + " - " + reader["카드번호2"].ToString() + " - " + reader["카드번호3"].ToString() + " - " + reader["카드번호4"].ToString());
+                    label10.Text = reader["받는_사람"].ToString();
+                    label12.Text = reader["주소"].ToString();
+
+                    if (label15.Text == "무통장 입금")
+                    {
+                        label6.Text = "입금 계좌";
+                        label7.Text = "OO은행";
+                        label8.Text = "998877-00-123456";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+        public void Order6()
+        {
+            string sql = "select 가격, 결제방식, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List6.Text + "'";
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+ 
+                    label5.Text = reader["가격"].ToString();
+                    label15.Text = reader["결제방식"].ToString();
+                    label7.Text = reader["은행"].ToString();
+                    label8.Text = (reader["카드번호1"].ToString() + " - " + reader["카드번호2"].ToString() + " - " + reader["카드번호3"].ToString() + " - " + reader["카드번호4"].ToString());
+                    label10.Text = reader["받는_사람"].ToString();
+                    label12.Text = reader["주소"].ToString();
+
+                    if (label15.Text == "무통장 입금")
+                    {
+                        label6.Text = "입금 계좌";
+                        label7.Text = "OO은행";
+                        label8.Text = "998877-00-123456";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
         public void Member_Pw_Update()
         {
             string sql = "update member_name set 비밀번호 = '" + textBox2.Text + "' where 아이디 = '" + main.Login_button.Text + "'";
@@ -307,32 +492,37 @@ namespace Shoppingmall
         private void List1_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
-            //Order();
+            Order1();
         }
 
         private void List2_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
+            Order2();
         }
 
         private void List3_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
+            Order3();
         }
 
         private void List4_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
+            Order4();
         }
 
         private void List5_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
+            Order5();
         }
 
         private void List6_Click(object sender, EventArgs e)
         {
             panel1.Visible = true;
+            Order6();
         }
 
         private void button2_Click(object sender, EventArgs e)

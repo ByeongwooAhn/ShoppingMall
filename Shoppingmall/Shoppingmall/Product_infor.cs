@@ -24,6 +24,7 @@ namespace Shoppingmall
             if (main.Login_button.Text == "Login")
             {
                 Pay _Form = new Pay();
+                _Form._Infor = this;
                 _Form.Show();
             }
             else

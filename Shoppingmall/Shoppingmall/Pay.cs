@@ -23,12 +23,14 @@ namespace Shoppingmall
             InitializeComponent();
         }
 
+        public Product_infor _Infor;
+
         public void Not_member_infor()
         {
-            string sql1 = "Insert Into member_not (받는_사람, 주소, 전화번호, 비밀번호, 결제방식)" +
-                            "values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + Pay_Card.Text + "')";
-            string sql2 = "Insert Into member_not (받는_사람, 주소, 전화번호, 비밀번호, 결제방식)" +
-                            "values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + Pay_Cash.Text + "')";
+            string sql1 = "Insert Into member_not (받는_사람, 상품명, 가격, 주소, 전화번호, 비밀번호, 결제방식)" +
+                            "values ('" + textBox1.Text + "', '" + _Infor.label9.Text + "', '" + _Infor.label1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + Pay_Card.Text + "')";
+            string sql2 = "Insert Into member_not (받는_사람, 상품명, 가격, 주소, 전화번호, 비밀번호, 결제방식)" +
+                            "values ('" + textBox1.Text + "', '" + _Infor.label9.Text + "', '" + _Infor.label1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + textBox4.Text + "', '" + Pay_Cash.Text + "')";
             using (MySqlConnection conn = new MySqlConnection(connstr))
             {
                 try

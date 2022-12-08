@@ -168,10 +168,10 @@
             this.Login_tab.Controls.Add(this.panel3);
             this.Login_tab.Controls.Add(this.panel7);
             this.Login_tab.Controls.Add(this.panel8);
-            this.Login_tab.Location = new System.Drawing.Point(34, 366);
+            this.Login_tab.Location = new System.Drawing.Point(34, 365);
             this.Login_tab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Login_tab.Name = "Login_tab";
-            this.Login_tab.Size = new System.Drawing.Size(498, 259);
+            this.Login_tab.Size = new System.Drawing.Size(498, 260);
             this.Login_tab.TabIndex = 12;
             // 
             // label2
@@ -381,6 +381,7 @@
             this.textBox5.Size = new System.Drawing.Size(457, 18);
             this.textBox5.TabIndex = 19;
             this.textBox5.UseSystemPasswordChar = true;
+            this.textBox5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox5_KeyUp);
             // 
             // label8
             // 
@@ -402,6 +403,7 @@
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(457, 18);
             this.textBox6.TabIndex = 17;
+            this.textBox6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBox6_KeyUp);
             // 
             // textBox7
             // 
@@ -530,43 +532,42 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label Login_Fail;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel Login_tab;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         public System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel Not_Tab;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Panel panel11;
         public System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox PW;
         public System.Windows.Forms.TextBox ID;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
+        public System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Label Login_Fail;
+        public System.Windows.Forms.Panel panel5;
+        public System.Windows.Forms.Button button2;
+        public System.Windows.Forms.Button button3;
+        public System.Windows.Forms.Button button4;
+        public System.Windows.Forms.Panel Login_tab;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Panel panel7;
+        public System.Windows.Forms.Panel panel8;
+        public System.Windows.Forms.Panel panel9;
+        public System.Windows.Forms.Panel Not_Tab;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.Label label6;
+        public System.Windows.Forms.Label label7;
+        public System.Windows.Forms.TextBox textBox5;
+        public System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox textBox7;
+        public System.Windows.Forms.Panel panel11;
+        public System.Windows.Forms.Panel panel12;
+        public System.Windows.Forms.Panel panel13;
+        public System.Windows.Forms.Panel panel14;
+        public System.Windows.Forms.Panel panel15;
+        public System.Windows.Forms.Panel panel16;
+        public System.Windows.Forms.Label label2;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox PW;
+        public System.Windows.Forms.Panel panel10;
+        public System.Windows.Forms.Panel panel3;
+        public System.Windows.Forms.Panel panel4;
     }
 }

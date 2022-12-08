@@ -66,7 +66,7 @@ namespace Shoppingmall
 
         public DataSet Search_Not()
         {
-            string sql = "select * from member_not where 이름 = '" + textBox6.Text + "' and 비밀번호 = '" + textBox5.Text + "'";
+            string sql = "select * from member_not where 받는_사람 = '" + textBox6.Text + "' and 비밀번호 = '" + textBox5.Text + "'";
             DataSet ds = new DataSet();
 
             using (MySqlConnection conn = new MySqlConnection(connstr))
@@ -137,11 +137,56 @@ namespace Shoppingmall
             }
         }
 
+        private void Login_OK_Not(string Id, string Pw)
+        {
+            DataSet ds;
+            ds = Search_Not();
+
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    if (ds.Tables[0].Rows.Count > 0)
+                    {
+                        foreach (DataRow row in ds.Tables[0].Rows)
+                        {
+                            if ((Id == row["받는_사람"].ToString()) && (Pw == row["비밀번호"].ToString()))
+                            {
+                                MessageBox.Show("비회원 입니다.", "알림");
+                                Not_Member not = new Not_Member();
+                                not.login = this;
+                                not.groupBox2.Text = textBox6.Text;
+                                Close();
+                                not.ShowDialog();
+
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Login_Fail.Text = "아이디 또는 비밀번호를 확인해주세요.";
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
+
+
         private void Login_button_Click(object sender, EventArgs e)
         {
             if(Login_tab.Visible == true)
             {
                 Login_OK(ID.Text, PW.Text);
+            }
+            else if(Login_tab.Visible == false)
+            {
+                Login_OK_Not(textBox6.Text, textBox5.Text);
             }
         }
 
@@ -174,6 +219,22 @@ namespace Shoppingmall
             if (e.KeyCode == Keys.Enter)
             {
                 Login_OK(ID.Text, PW.Text);
+            }
+        }
+
+        private void textBox6_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter)
+            {
+                Login_OK_Not(textBox6.Text, textBox5.Text);
+            }
+        }
+
+        private void textBox5_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                Login_OK_Not(textBox6.Text, textBox5.Text);
             }
         }
     }

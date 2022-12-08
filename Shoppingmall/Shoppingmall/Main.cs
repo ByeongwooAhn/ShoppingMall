@@ -40,7 +40,7 @@ namespace Shoppingmall
             if (Login_button.Text == "Login")
             {
                 Login login = new Login(this);
-                login.Show();
+                login.ShowDialog();
             }
             else {  }
         }

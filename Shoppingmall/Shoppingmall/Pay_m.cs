@@ -26,8 +26,8 @@ namespace Shoppingmall
 
         public void member_infor()
         {
-            string sql1 = "Insert Into member_pay (아이디, 상품명, 상품_사진, 가격, 받는_사람, 주소, 전화번호, 결제방식) values ('" + label5.Text + "', '" + _Infor.label9.Text + "', '" + _Infor.pictureBox1.Image + "', '" + _Infor.label1.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Card.Text + "')";
-            string sql2 = "Insert Into member_pay (아이디, 상품명, 상품_사진, 가격, 받는_사람, 주소, 전화번호, 결제방식) values ('" + label5.Text + "', '" + _Infor.label9.Text + "', '" + _Infor.pictureBox1.Image + "', '" + _Infor.label1.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Cash.Text + "')";
+            string sql1 = "Insert Into member_pay (아이디, 상품명, 가격, 받는_사람, 주소, 전화번호, 결제방식) values ('" + label5.Text + "', '" + _Infor.label9.Text + "', '" + _Infor.label1.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Card.Text + "')";
+            string sql2 = "Insert Into member_pay (아이디, 상품명, 가격, 받는_사람, 주소, 전화번호, 결제방식) values ('" + label5.Text + "', '" + _Infor.label9.Text + "', '" + _Infor.label1.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Cash.Text + "')";
             using (MySqlConnection conn = new MySqlConnection(connstr))
             {
                 try
