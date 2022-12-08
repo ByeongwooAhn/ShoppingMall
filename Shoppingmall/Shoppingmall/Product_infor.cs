@@ -29,6 +29,8 @@ namespace Shoppingmall
             else
             {
                 Pay_m _m = new Pay_m();
+                _m._Infor = this;
+                _m.label5.Text = main.Login_button.Text;
                 _m.Show();
             }
         }

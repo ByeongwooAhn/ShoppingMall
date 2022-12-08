@@ -22,12 +22,14 @@ namespace Shoppingmall
             InitializeComponent();
         }
 
+        public Product_infor _Infor;
+
         public void member_infor()
         {
-            string sql1 = "Insert Into member_pay (받는_사람, 주소, 전화번호, 결제방식)" +
-                            "values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Card.Text + "')";
-            string sql2 = "Insert Into member_pay (받는_사람, 주소, 전화번호, 결제방식)" +
-                            "values ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Cash.Text + "')";
+            string sql1 = "Insert Into member_pay (아이디, 상품명, 받는_사람, 주소, 전화번호, 결제방식)" +
+                            "values ('" + label5.Text + "', '" + _Infor.label9.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Card.Text + "')";
+            string sql2 = "Insert Into member_pay (아이디, 상품명, 받는_사람, 주소, 전화번호, 결제방식)" +
+                            "values ('" + label5.Text + "', '" + _Infor.label9.Text + "', '" + textBox1.Text + "', '" + textBox2.Text + "', '" + textBox3.Text + "', '" + Pay_Cash.Text + "')";
             using (MySqlConnection conn = new MySqlConnection(connstr))
             {
                 try
@@ -74,13 +76,6 @@ namespace Shoppingmall
                 }
                 else if (Pay_Cash.Checked == true && Pay_Card.Checked == false)
                 {
-                    Image image;
-                    Product_infor product_Infor = new Product_infor();
-                    My_Infor my_Infor = new My_Infor();
-
-                    image = product_Infor.pictureBox1.Image;
-                    my_Infor.pictureBox1.Image = image;
-
                     MessageBox.Show("결제가 완료되었습니다.\n금일 24시까지 OO은행 998877-00-123456으로 입금해 주세요");
                     Close();
                 }

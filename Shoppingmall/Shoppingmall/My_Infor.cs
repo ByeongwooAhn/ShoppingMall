@@ -51,6 +51,33 @@ namespace Shoppingmall
                 }
         }
 
+        public void Order_Load()
+        {
+            string sql = "select 상품명 from member_pay where 아이디 = '" + main.Login_button.Text + "'";
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+
+                    MySqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    List1.Text = reader["상품명"].ToString();
+                    List2.Text = reader["상품명"].ToString();
+                    List3.Text = reader["상품명"].ToString();
+                    List4.Text = reader["상품명"].ToString();
+                    List5.Text = reader["상품명"].ToString();
+                    List6.Text = reader["상품명"].ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+        }
+
         public void Member_Pw_Update()
         {
             string sql = "update member_name set 비밀번호 = '" + textBox2.Text + "' where 아이디 = '" + main.Login_button.Text + "'";
@@ -159,6 +186,7 @@ namespace Shoppingmall
         {
             panel1.Visible = false;
             Member_Load();
+            Order_Load();
 
             change1 = 0;
             change2 = 0;

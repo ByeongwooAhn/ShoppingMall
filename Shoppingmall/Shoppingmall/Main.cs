@@ -66,8 +66,6 @@ namespace Shoppingmall
         private void label2_Click(object sender, EventArgs e)  //옷 가격
         {
             #region 
-            Pay pay = new Pay();
-
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -79,6 +77,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label2.Text;
                     _Infor.label7.Text = "65";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "베이직 퍼";
                     _Infor.pictureBox1.Image = pictureBox2.Image;
                     _Infor.Show();
                 }
@@ -90,6 +89,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label2.Text;
                 _Infor.label7.Text = "65";
                 _Infor.label8.Text = "68";
+                _Infor.label9.Text = "베이직 퍼";
                 _Infor.pictureBox1.Image = pictureBox2.Image;
                 _Infor.Show();
             }
@@ -112,6 +112,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label2.Text;
                     _Infor.label7.Text = "65";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "베이직 퍼";
                     _Infor.pictureBox1.Image = pictureBox2.Image;
                     _Infor.Show();
                 }
@@ -123,6 +124,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label2.Text;
                 _Infor.label7.Text = "65";
                 _Infor.label8.Text = "68";
+                _Infor.label9.Text = "베이직 퍼";
                 _Infor.pictureBox1.Image = pictureBox2.Image;
                 _Infor.Show();
             }
@@ -132,8 +134,6 @@ namespace Shoppingmall
         private void pictureBox13_Click(object sender, EventArgs e)
         {
             #region 
-            Pay pay = new Pay();
-
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -145,6 +145,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label3.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "72";
+                    _Infor.label9.Text = "정장 자켓";
                     _Infor.pictureBox1.Image = pictureBox13.Image;
                     _Infor.Show();
                 }
@@ -156,6 +157,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label3.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "72";
+                _Infor.label9.Text = "정장 자켓";
                 _Infor.pictureBox1.Image = pictureBox13.Image;
                 _Infor.Show();
             }
@@ -164,9 +166,7 @@ namespace Shoppingmall
 
         private void label3_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -178,6 +178,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label3.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "72";
+                    _Infor.label9.Text = "정장 자켓";
                     _Infor.pictureBox1.Image = pictureBox13.Image;
                     _Infor.Show();
                 }
@@ -189,6 +190,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label3.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "72";
+                _Infor.label9.Text = "정장 자켓";
                 _Infor.pictureBox1.Image = pictureBox13.Image;
                 _Infor.Show();
             }
@@ -197,9 +199,7 @@ namespace Shoppingmall
 
         private void pictureBox7_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -211,6 +211,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label4.Text;
                     _Infor.label7.Text = "48";
                     _Infor.label8.Text = "70";
+                    _Infor.label9.Text = "하얀 반팔";
                     _Infor.pictureBox1.Image = pictureBox7.Image;
                     _Infor.Show();
                 }
@@ -222,6 +223,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label4.Text;
                 _Infor.label7.Text = "48";
                 _Infor.label8.Text = "70";
+                _Infor.label9.Text = "하얀 반팔";
                 _Infor.pictureBox1.Image = pictureBox7.Image;
                 _Infor.Show();
             }
@@ -230,9 +232,7 @@ namespace Shoppingmall
 
         private void label4_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -244,6 +244,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label4.Text;
                     _Infor.label7.Text = "48";
                     _Infor.label8.Text = "70";
+                    _Infor.label9.Text = "하얀 반팔";
                     _Infor.pictureBox1.Image = pictureBox7.Image;
                     _Infor.Show();
                 }
@@ -255,6 +256,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label4.Text;
                 _Infor.label7.Text = "48";
                 _Infor.label8.Text = "70";
+                _Infor.label9.Text = "하얀 반팔";
                 _Infor.pictureBox1.Image = pictureBox7.Image;
                 _Infor.Show();
             }
@@ -263,9 +265,7 @@ namespace Shoppingmall
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -278,6 +278,7 @@ namespace Shoppingmall
                     _Infor.label6.Text = "M";
                     _Infor.label7.Text = "28";
                     _Infor.label8.Text = "80";
+                    _Infor.label9.Text = "트레이닝복 하의_검정";
                     _Infor.pictureBox1.Image = pictureBox5.Image;
                     _Infor.Show();
                 }
@@ -290,6 +291,7 @@ namespace Shoppingmall
                 _Infor.label6.Text = "M";
                 _Infor.label7.Text = "28";
                 _Infor.label8.Text = "80";
+                _Infor.label9.Text = "트레이닝복 하의_검정";
                 _Infor.pictureBox1.Image = pictureBox5.Image;
                 _Infor.Show();
             }
@@ -298,9 +300,7 @@ namespace Shoppingmall
 
         private void label5_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -313,6 +313,7 @@ namespace Shoppingmall
                     _Infor.label6.Text = "M";
                     _Infor.label7.Text = "28";
                     _Infor.label8.Text = "80";
+                    _Infor.label9.Text = "트레이닝복 하의_검정";
                     _Infor.pictureBox1.Image = pictureBox5.Image;
                     _Infor.Show();
                 }
@@ -325,6 +326,7 @@ namespace Shoppingmall
                 _Infor.label6.Text = "M";
                 _Infor.label7.Text = "28";
                 _Infor.label8.Text = "80";
+                _Infor.label9.Text = "트레이닝복 하의_검정";
                 _Infor.pictureBox1.Image = pictureBox5.Image;
                 _Infor.Show();
             }
@@ -333,9 +335,7 @@ namespace Shoppingmall
 
         private void pictureBox12_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -347,6 +347,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label6.Text;
                     _Infor.label7.Text = "40";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "트레이닝복 상의_검정";
                     _Infor.pictureBox1.Image = pictureBox12.Image;
                     _Infor.Show();
                 }
@@ -358,6 +359,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label6.Text;
                 _Infor.label7.Text = "40";
                 _Infor.label8.Text = "68";
+                _Infor.label9.Text = "트레이닝복 상의_검정";
                 _Infor.pictureBox1.Image = pictureBox12.Image;
                 _Infor.Show();
             }
@@ -366,9 +368,7 @@ namespace Shoppingmall
 
         private void label6_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -380,6 +380,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label6.Text;
                     _Infor.label7.Text = "40";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "트레이닝복 상의_검정";
                     _Infor.pictureBox1.Image = pictureBox12.Image;
                     _Infor.Show();
                 }
@@ -391,6 +392,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label6.Text;
                 _Infor.label7.Text = "40";
                 _Infor.label8.Text = "68";
+                _Infor.label9.Text = "트레이닝복 상의_검정";
                 _Infor.pictureBox1.Image = pictureBox12.Image;
                 _Infor.Show();
             }
@@ -399,9 +401,7 @@ namespace Shoppingmall
 
         private void pictureBox8_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -413,6 +413,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label7.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "74";
+                    _Infor.label9.Text = "맨투맨_파랑";
                     _Infor.pictureBox1.Image = pictureBox8.Image;
                     _Infor.Show();
                 }
@@ -424,6 +425,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label7.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "74";
+                _Infor.label9.Text = "맨투맨_파랑";
                 _Infor.pictureBox1.Image = pictureBox8.Image;
                 _Infor.Show();
             }
@@ -432,9 +434,7 @@ namespace Shoppingmall
 
         private void label7_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -446,6 +446,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label7.Text;
                     _Infor.label7.Text = "53";
                     _Infor.label8.Text = "74";
+                    _Infor.label9.Text = "맨투맨_파랑";
                     _Infor.pictureBox1.Image = pictureBox8.Image;
                     _Infor.Show();
                 }
@@ -457,6 +458,7 @@ namespace Shoppingmall
                 _Infor.label1.Text = label7.Text;
                 _Infor.label7.Text = "53";
                 _Infor.label8.Text = "74";
+                _Infor.label9.Text = "맨투맨_파랑";
                 _Infor.pictureBox1.Image = pictureBox8.Image;
                 _Infor.Show();
             }
@@ -465,9 +467,7 @@ namespace Shoppingmall
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -480,6 +480,7 @@ namespace Shoppingmall
                     _Infor.label6.Text = "S";
                     _Infor.label7.Text = "28";
                     _Infor.label8.Text = "45";
+                    _Infor.label9.Text = "연청_반바지";
                     _Infor.pictureBox1.Image = pictureBox6.Image;
                     _Infor.Show();
                 }
@@ -492,6 +493,7 @@ namespace Shoppingmall
                 _Infor.label6.Text = "S";
                 _Infor.label7.Text = "28";
                 _Infor.label8.Text = "45";
+                _Infor.label9.Text = "연청_반바지";
                 _Infor.pictureBox1.Image = pictureBox6.Image;
                 _Infor.Show();
             }
@@ -500,9 +502,7 @@ namespace Shoppingmall
 
         private void label8_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -515,6 +515,7 @@ namespace Shoppingmall
                     _Infor.label6.Text = "S";
                     _Infor.label7.Text = "28";
                     _Infor.label8.Text = "45";
+                    _Infor.label9.Text = "연청_반바지";
                     _Infor.pictureBox1.Image = pictureBox6.Image;
                     _Infor.Show();
                 }
@@ -527,6 +528,7 @@ namespace Shoppingmall
                     _Infor.label6.Text = "S";
                     _Infor.label7.Text = "28";
                     _Infor.label8.Text = "45";
+                    _Infor.label9.Text = "연청_반바지";
                     _Infor.pictureBox1.Image = pictureBox6.Image;
                     _Infor.Show();
             }
@@ -535,9 +537,7 @@ namespace Shoppingmall
 
         private void pictureBox9_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -549,6 +549,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "아디다스_반팔";
                     _Infor.pictureBox1.Image = pictureBox9.Image;
                     _Infor.Show();
                 }
@@ -560,6 +561,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "아디다스_반팔";
                     _Infor.pictureBox1.Image = pictureBox9.Image;
                     _Infor.Show();
             }
@@ -568,9 +570,7 @@ namespace Shoppingmall
 
         private void label9_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -582,6 +582,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "아디다스_반팔";
                     _Infor.pictureBox1.Image = pictureBox9.Image;
                     _Infor.Show();
                 }
@@ -593,6 +594,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label9.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "68";
+                    _Infor.label9.Text = "아디다스_반팔";
                     _Infor.pictureBox1.Image = pictureBox9.Image;
                     _Infor.Show();
             }
@@ -601,9 +603,7 @@ namespace Shoppingmall
 
         private void pictureBox10_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -615,6 +615,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
+                    _Infor.label9.Text = "1987_반팔";
                     _Infor.pictureBox1.Image = pictureBox10.Image;
                     _Infor.Show();
                 }
@@ -626,6 +627,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
+                    _Infor.label9.Text = "1987_반팔";
                     _Infor.pictureBox1.Image = pictureBox10.Image;
                     _Infor.Show();
             }
@@ -634,9 +636,7 @@ namespace Shoppingmall
 
         private void label10_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -648,6 +648,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
+                    _Infor.label9.Text = "1987_반팔";
                     _Infor.pictureBox1.Image = pictureBox10.Image;
                     _Infor.Show();
                 }
@@ -659,6 +660,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label10.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "74";
+                    _Infor.label9.Text = "1987_반팔";
                     _Infor.pictureBox1.Image = pictureBox10.Image;
                     _Infor.Show();
             }
@@ -667,9 +669,7 @@ namespace Shoppingmall
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -681,6 +681,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
+                    _Infor.label9.Text = "가죽자켓";
                     _Infor.pictureBox1.Image = pictureBox3.Image;
                     _Infor.Show();
                 }
@@ -692,6 +693,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
+                    _Infor.label9.Text = "가죽자켓";
                     _Infor.pictureBox1.Image = pictureBox3.Image;
                     _Infor.Show();
             }
@@ -700,9 +702,7 @@ namespace Shoppingmall
 
         private void label11_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -714,6 +714,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
+                    _Infor.label9.Text = "가죽자켓";
                     _Infor.pictureBox1.Image = pictureBox3.Image;
                     _Infor.Show();
                 }
@@ -725,6 +726,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label11.Text;
                     _Infor.label7.Text = "56";
                     _Infor.label8.Text = "70";
+                    _Infor.label9.Text = "가죽자켓";
                     _Infor.pictureBox1.Image = pictureBox3.Image;
                     _Infor.Show();
             }
@@ -733,9 +735,7 @@ namespace Shoppingmall
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -747,6 +747,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
+                    _Infor.label9.Text = "후드티_연두";
                     _Infor.pictureBox1.Image = pictureBox4.Image;
                     _Infor.Show();
                 }
@@ -758,6 +759,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
+                    _Infor.label9.Text = "후드티_연두";
                     _Infor.pictureBox1.Image = pictureBox4.Image;
                     _Infor.Show();
             }
@@ -766,9 +768,7 @@ namespace Shoppingmall
 
         private void label12_Click(object sender, EventArgs e) //옷 사진과 가격 끝
         {
-            #region 
-            Pay pay = new Pay();
-
+            #region
             if (Login_button.Text == "Login")
             {
                 DialogResult result = MessageBox.Show("현재 비회원 상태입니다.\n비회원으로 주문하시겠습니까?", "알림", MessageBoxButtons.YesNo);
@@ -780,6 +780,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
+                    _Infor.label9.Text = "후드티_연두";
                     _Infor.pictureBox1.Image = pictureBox4.Image;
                     _Infor.Show();
                 }
@@ -791,6 +792,7 @@ namespace Shoppingmall
                     _Infor.label1.Text = label12.Text;
                     _Infor.label7.Text = "52";
                     _Infor.label8.Text = "71";
+                    _Infor.label9.Text = "후드티_연두";
                     _Infor.pictureBox1.Image = pictureBox4.Image;
                     _Infor.Show();
             }
