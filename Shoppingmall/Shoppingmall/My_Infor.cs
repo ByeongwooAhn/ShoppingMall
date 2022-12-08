@@ -51,9 +51,104 @@ namespace Shoppingmall
                 }
         }
 
-        public void Order_Load()
+        public DataSet Order_Search()
         {
             string sql = "select 상품명 from member_pay where 아이디 = '" + main.Login_button.Text + "'";
+            DataSet ds = new DataSet();
+
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    MySqlCommand cmd = new MySqlCommand(sql, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            using (MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+
+                    {
+                        conn.Open();
+                        MySqlDataAdapter da = new MySqlDataAdapter(sql, conn);
+                        da.Fill(ds);
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            return ds;
+        }
+
+        public void Order_Load()
+        {
+            DataSet ds;
+            ds = Order_Search();
+
+            int number = 0;
+
+            using(MySqlConnection conn = new MySqlConnection(connstr))
+            {
+                try
+                {
+                    conn.Open();
+                    if (ds.Tables[0].Rows.Count > 0)
+                    {
+                        foreach(DataRow row in ds.Tables[0].Rows)
+                        {
+                            number++;
+
+                            Label labels = (Controls.Find("List" + number.ToString(), true)[0] as Label);
+                            labels.Text = row["상품명"].ToString();
+
+                            /*if(number == 1)
+                            {
+                                List1.Text = row["상품명"].ToString();
+                            }
+                            else if (number == 2)
+                            {
+                                List2.Text = row["상품명"].ToString();
+                            }
+                            else if (number == 3)
+                            {
+                                List3.Text = row["상품명"].ToString();
+                            }
+                            else if (number == 4)
+                            {
+                                List4.Text = row["상품명"].ToString();
+                            }
+                            else if (number == 5)
+                            {
+                                List5.Text = row["상품명"].ToString();
+                            }
+                            else if (number == 6)
+                            {
+                                List6.Text = row["상품명"].ToString();
+                            }*/
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+
+        }
+
+
+        public void Order()
+        {
+            string sql = "select 상품_사진, 가격, 은행, 카드번호1, 카드번호2, 카드번호3, 카드번호4, 받는_사람, 주소 from member_pay where 아이디 = '" + main.Login_button.Text + "' and 상품명 = '" + List1.Text + "'";
             using (MySqlConnection conn = new MySqlConnection(connstr))
             {
                 try
@@ -64,12 +159,12 @@ namespace Shoppingmall
 
                     MySqlDataReader reader = cmd.ExecuteReader();
                     reader.Read();
-                    List1.Text = reader["상품명"].ToString();
-                    List2.Text = reader["상품명"].ToString();
-                    List3.Text = reader["상품명"].ToString();
-                    List4.Text = reader["상품명"].ToString();
-                    List5.Text = reader["상품명"].ToString();
-                    List6.Text = reader["상품명"].ToString();
+                    //pictureBox4.Image = reader["아이디"].Bitmap();
+                    label5.Text = reader["가격"].ToString();
+                    label7.Text = reader["은행"].ToString();
+                    label8.Text = (reader["카드번호1"].ToString() + reader["카드번호2"].ToString() + reader["카드번호3"].ToString() + reader["카드번호4"].ToString());
+                    label10.Text = reader["받는_사람"].ToString();
+                    label12.Text = reader["주소"].ToString();
                 }
                 catch (Exception ex)
                 {
@@ -77,7 +172,6 @@ namespace Shoppingmall
                 }
             }
         }
-
         public void Member_Pw_Update()
         {
             string sql = "update member_name set 비밀번호 = '" + textBox2.Text + "' where 아이디 = '" + main.Login_button.Text + "'";
@@ -207,6 +301,38 @@ namespace Shoppingmall
                     Member_Update();
                 }
             }
+        }
+
+
+        private void List1_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+            //Order();
+        }
+
+        private void List2_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void List3_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void List4_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void List5_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
+        }
+
+        private void List6_Click(object sender, EventArgs e)
+        {
+            panel1.Visible = true;
         }
 
         private void button2_Click(object sender, EventArgs e)

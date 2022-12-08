@@ -38,7 +38,10 @@ namespace Shoppingmall
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     cmd.ExecuteNonQuery();
                 }
-                catch (Exception ex) { }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
             using (MySqlConnection conn = new MySqlConnection(connstr))
@@ -55,7 +58,7 @@ namespace Shoppingmall
                 }
                 catch (Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
             }
             return ds;
@@ -74,7 +77,10 @@ namespace Shoppingmall
                     MySqlCommand cmd = new MySqlCommand(sql, conn);
                     cmd.ExecuteNonQuery();
                 }
-                catch (Exception ex) { }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
 
             using (MySqlConnection conn = new MySqlConnection(connstr))
@@ -91,7 +97,7 @@ namespace Shoppingmall
                 }
                 catch (Exception ex)
                 {
-
+                    MessageBox.Show(ex.Message);
                 }
             }
             return ds;
@@ -124,7 +130,10 @@ namespace Shoppingmall
                         Login_Fail.Text = "아이디 또는 비밀번호를 확인해주세요.";
                     }
                 }
-                catch (Exception ex) { }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
 
