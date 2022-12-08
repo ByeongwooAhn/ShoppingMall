@@ -103,10 +103,17 @@ namespace Shoppingmall
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Card_infor();
-            Close();
-            MessageBox.Show("결제가 완료되었습니다!");
-            pay.Close();
+            if (textBox1.Text == "" || String.IsNullOrWhiteSpace(textBox1.Text) || textBox2.Text == "" || String.IsNullOrWhiteSpace(textBox2.Text) || textBox3.Text == "" || String.IsNullOrWhiteSpace(textBox3.Text) || textBox4.Text == "" || String.IsNullOrWhiteSpace(textBox4.Text) || textBox5.Text == "" || String.IsNullOrWhiteSpace(textBox5.Text))
+            {
+                MessageBox.Show("정보 입력을 전부 해주세요.", "알림");
+            }
+            else
+            {
+                Card_infor();
+                Close();
+                MessageBox.Show("결제가 완료되었습니다!");
+                pay.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)

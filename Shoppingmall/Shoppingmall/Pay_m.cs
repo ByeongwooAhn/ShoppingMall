@@ -60,22 +60,29 @@ namespace Shoppingmall
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == false)
+            if(textBox1.Text == "" || String.IsNullOrWhiteSpace(textBox1.Text) || textBox2.Text == "" || String.IsNullOrWhiteSpace(textBox2.Text) || textBox3.Text == "" || String.IsNullOrWhiteSpace(textBox3.Text))
             {
-                MessageBox.Show("약관에 동의해 주세요.");
+                MessageBox.Show("정보 입력을 전부 해주세요.", "알림");
             }
-            else if (radioButton1.Checked == true)
+            else
             {
-                member_infor();
-                if (Pay_Card.Checked == true && Pay_Cash.Checked == false)
+                if (radioButton1.Checked == false)
                 {
-                    Card_m _m = new Card_m(this);
-                    _m.Show();
+                    MessageBox.Show("약관에 동의해 주세요.");
                 }
-                else if (Pay_Cash.Checked == true && Pay_Card.Checked == false)
+                else if (radioButton1.Checked == true)
                 {
-                    MessageBox.Show("결제가 완료되었습니다.\n금일 24시까지 OO은행 998877-00-123456으로 입금해 주세요");
-                    Close();
+                    member_infor();
+                    if (Pay_Card.Checked == true && Pay_Cash.Checked == false)
+                    {
+                        Card_m _m = new Card_m(this);
+                        _m.Show();
+                    }
+                    else if (Pay_Cash.Checked == true && Pay_Card.Checked == false)
+                    {
+                        MessageBox.Show("주문이 완료되었습니다.\n금일 24시까지 OO은행 998877-00-123456으로 입금해 주세요");
+                        Close();
+                    }
                 }
             }
         }
